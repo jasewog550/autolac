@@ -103,7 +103,7 @@ code_clipboard: true
 | :------------ | :-------- | :---------- | :----------------------------------------------------------------------------- |
 | created     | date-time | Sim         | Data e hora de geração do token (UTC).                                         |
 | expiration  | date-time | Sim         | Data e hora de expiração do token (UTC).                                       |
-| accessToken | string    | Sim         | O token de acesso (JWT) a ser usado no cabeçalho Authorization: Bearer <token> das próximas requisições. |
+| accessToken | string    | Sim         | O token de acesso (JWT) a ser usado no cabeçalho `Authorization: Bearer <token>` das próximas requisições. |
 | message     | string    | Sim         | Mensagem indicando o status da autenticação.                                  |
 
 **Exemplo Completo (Response 200 OK):**
@@ -159,7 +159,7 @@ code_clipboard: true
 - Consulta de exames:
   - Path: /Api/Inter-Autolac/Exames
   - Método: GET
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
@@ -385,7 +385,7 @@ https://[endereco-api]/Api/Inter-Autolac/Exames?ExameCtrlVersao=1678886400000&Pa
   - Path: /Api/Inter-Autolac/Pedidos
   - Método: POST
   - Content-Type: application/json
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
@@ -959,7 +959,7 @@ https://[endereco-api]/Api/Inter-Autolac/Exames?ExameCtrlVersao=1678886400000&Pa
   - Path: /Api/Inter-Autolac/Resultados
   - Método: POST
   - Content-Type: application/json
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
