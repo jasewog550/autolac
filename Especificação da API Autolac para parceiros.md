@@ -103,7 +103,7 @@ code_clipboard: true
 | :------------ | :-------- | :---------- | :----------------------------------------------------------------------------- |
 | created     | date-time | Sim         | Data e hora de geração do token (UTC).                                         |
 | expiration  | date-time | Sim         | Data e hora de expiração do token (UTC).                                       |
-| accessToken | string    | Sim         | O token de acesso (JWT) a ser usado no cabeçalho Authorization: Bearer <token> das próximas requisições. |
+| accessToken | string    | Sim         | O token de acesso (JWT) a ser usado no cabeçalho `Authorization: Bearer <token>` das próximas requisições. |
 | message     | string    | Sim         | Mensagem indicando o status da autenticação.                                  |
 
 **Exemplo Completo (Response 200 OK):**
@@ -159,7 +159,7 @@ code_clipboard: true
 - Consulta de exames:
   - Path: /Api/Inter-Autolac/Exames
   - Método: GET
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
@@ -385,7 +385,7 @@ https://[endereco-api]/Api/Inter-Autolac/Exames?ExameCtrlVersao=1678886400000&Pa
   - Path: /Api/Inter-Autolac/Pedidos
   - Método: POST
   - Content-Type: application/json
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
@@ -959,7 +959,7 @@ https://[endereco-api]/Api/Inter-Autolac/Exames?ExameCtrlVersao=1678886400000&Pa
   - Path: /Api/Inter-Autolac/Resultados
   - Método: POST
   - Content-Type: application/json
-  - Autenticação: Requer Token JWT (Cabeçalho Authorization: Bearer <token>)
+  - Autenticação: Requer Token JWT (Cabeçalho `Authorization: Bearer <token>`)
 
 #### Request
 
@@ -1217,7 +1217,7 @@ https://[endereco-api]/Api/Inter-Autolac/Exames?ExameCtrlVersao=1678886400000&Pa
   | pacienteNome     | string  | Não         | Nome do paciente associado ao protocolo encontrado. Pode ser nulo se o protocolo não for encontrado. |                                                   |
   | erros            | array   | Sim         | Lista (pode ser vazia) de mensagens de erro específicas para a consulta deste protocolo. |                                                   |
   | exames           | array   | Sim         | Lista (pode ser vazia) contendo os resultados dos exames solicitados para este protocolo. | [ExameRetorno](#exameretorno-response-resultados) |
-  | laudoPdf         | string  | Não         | String Base64 contendo o PDF do laudo consolidado para os exames deste protocolo se o parâmetro [[Integração com Apoio e Apoiado](https://dev.azure.com/gruposym/Autolac/_wiki/wikis/Autolac.wiki?wikiVersion=GBwikiMaster&pagePath=/Autolac/Configura%C3%A7%C3%B5es/Sistema/Par%C3%A2metros/Integra%C3%A7%C3%A3o%20com%20Apoio%20e%20Apoiado&anchor=configuracao_webservice)] > Usa a geração de laudo em PDF?] estiver marcado e a configuração do cadastro Apoiado indicar que não retorna o PDF por exame, caso contrário nulo. |                                                   |
+  | laudoPdf         | string  | Não         | String Base64 contendo o PDF do laudo consolidado para os exames deste protocolo se a [configuração no parâmetro de integração](https://dev.azure.com/gruposym/Autolac/_wiki/wikis/Autolac.wiki?wikiVersion=GBwikiMaster&pagePath=/Autolac/Configura%C3%A7%C3%B5es/Sistema/Par%C3%A2metros/Integra%C3%A7%C3%A3o%20com%20Apoio%20e%20Apoiado&anchor=configuracao_webservice) estiver marcada e a configuração do cadastro Apoiado indicar que não retorna o PDF por exame, caso contrário nulo. |                                                   |
 
 ###### ExameRetorno 
 - Representa o resultado de um exame específico consultado dentro de um protocolo.
