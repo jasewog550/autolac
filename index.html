@@ -340,20 +340,17 @@
 </tbody></table>
 <h2 id='result'>Result</h2>
 <ul>
-<li>Objeto padrão utilizado para encapsular as respostas da API Autolac. Indica o status da operação e contém os dados de retorno ou mensagens de erro.
-### Exemplo (Sucesso)
-<code>json
-{
-&quot;statusCode&quot;: 200,
-&quot;success&quot;: true,
-&quot;message&quot;: &quot;Mensagem descritiva de sucesso.&quot;,
-&quot;data&quot;: {
-// O conteúdo aqui varia dependendo do endpoint e do resultado da operação.
-}
-}
-</code></li>
+<li>Objeto padrão utilizado para encapsular as respostas da API Autolac. Indica o status da operação e contém os dados de retorno ou mensagens de erro.</li>
 </ul>
-<h3 id='exemplo-erro'>Exemplo (Erro)</h3><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+<h3 id='exemplo-sucesso'>Exemplo (Sucesso)</h3><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensagem descritiva de sucesso."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">O</span><span class="w"> </span><span class="err">conteúdo</span><span class="w"> </span><span class="err">aqui</span><span class="w"> </span><span class="err">varia</span><span class="w"> </span><span class="err">dependendo</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">endpoint</span><span class="w"> </span><span class="err">e</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">resultado</span><span class="w"> </span><span class="err">da</span><span class="w"> </span><span class="err">operação.</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='exemplo-erro'>Exemplo (Erro)</h3><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
   </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
   </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensagem descritiva do erro."</span><span class="p">,</span><span class="w">
