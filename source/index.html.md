@@ -18,6 +18,7 @@ code_clipboard: true
 ## Result
 
 - Objeto padrão utilizado para encapsular as respostas da API Autolac. Indica o status da operação e contém os dados de retorno ou mensagens de erro.
+
 ### Exemplo (Sucesso)
 ```json
 {
